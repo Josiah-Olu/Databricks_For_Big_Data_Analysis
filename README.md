@@ -24,21 +24,21 @@ For your second task, you are working with a dataset extracted from Steam, an on
 game distribution service. This dataset is available on Blackboard and named steam-
 200k.csv. It provides details on the games different members have purchased and played,
 along with the number of hours they have played each game. It contains four columns:
-➢ The first column contains a unique identifier for each member
-➢ The second column contains the name of the game they purchased or played
-➢ The third column contains details of the member behaviour, either ‘purchase’ or
+1. The first column contains a unique identifier for each member
+2. The second column contains the name of the game they purchased or played
+3. The third column contains details of the member behaviour, either ‘purchase’ or
 ‘play’. Because a game has to be purchased before it can be played there will be two
 entries for the same game / member combination in some instances
-➢ The fourth is set to 1 for rows where the behaviour is ‘purchase’. For rows where the
+4. The fourth is set to 1 for rows where the behaviour is ‘purchase’. For rows where the
 behavious is ‘play’ the value in the fourth column corresponds to the number of
 hours of play
 We can use both purchase and play behaviours as implicit user feedback, which is useful for
 training a recommender system.
 Your task as a data scientist is to do the following:
-➢ Load the dataset into a Spark DataFrame. You may want to consider carrying out
+5. Load the dataset into a Spark DataFrame. You may want to consider carrying out
 some initial exploratory analysis of the data, which you are welcome to do using
 DataFrames, Spark SQL, Databricks visualisations, another visualisation library etc.
-➢ Use MLlib to train a collaborative filtering recommender system on the provided
+6. Use MLlib to train a collaborative filtering recommender system on the provided
 data, evaluate its performance and explore some of the resulting
 recommendations. You will need to carry out all pre-processing steps, such as
 splitting the data into training and test sets. It is your decision whether to include
